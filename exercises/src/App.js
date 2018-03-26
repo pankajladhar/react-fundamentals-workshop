@@ -10,6 +10,7 @@ import Events from './mycode/events';
 import Form from './mycode/form';
 import UncontrolledForm from './mycode/uncontrolledForm';
 import Grandparent from './mycode/refs';
+import PropTypesComponent from './mycode/propTypesComponent';
 import LifeCycleMethods from './mycode/life-cycle-methods'
 
 
@@ -31,6 +32,7 @@ class App extends Component {
               <li><Link to='/form'>Form with controlled Components</Link></li>
               <li><Link to='/uncontrolledForm'>Form with Uncontrolled Components</Link></li>
               <li><Link to='/refs'>Using refs</Link></li>
+              <li><Link to='/propTypesComponent'>Importance of Proptypes</Link></li>
               <li><Link to='/life-cycle-methods'>LifeCycleMethods</Link></li>
             </ul>
           </aside>
@@ -45,6 +47,7 @@ class App extends Component {
             <Route path='/form' component={Form} />
             <Route path='/uncontrolledForm' component={UncontrolledForm} />
             <Route path='/refs' component={Grandparent} />
+            <Route path='/propTypesComponent' component={PropTypesComponent} />
             <Route path='/life-cycle-methods' component={LifeCycleMethods} />
           </div>
         </div>
