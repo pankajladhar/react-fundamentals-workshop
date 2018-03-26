@@ -6,8 +6,10 @@ import ClassComponent from './mycode/ClassComponent';
 import State from './mycode/state';
 import Props from './mycode/props';
 import Children from './mycode/children'
-
-import Events from './mycode/events'
+import Events from './mycode/events';
+import Form from './mycode/form';
+import UncontrolledForm from './mycode/uncontrolledForm';
+import Grandparent from './mycode/refs';
 import LifeCycleMethods from './mycode/life-cycle-methods'
 
 
@@ -26,6 +28,9 @@ class App extends Component {
               <li><Link to='/props'>Props</Link></li>
               <li><Link to='/children'>Children</Link></li>
               <li><Link to='/events'>Events</Link></li>
+              <li><Link to='/form'>Form with controlled Components</Link></li>
+              <li><Link to='/uncontrolledForm'>Form with Uncontrolled Components</Link></li>
+              <li><Link to='/refs'>Using refs</Link></li>
               <li><Link to='/life-cycle-methods'>LifeCycleMethods</Link></li>
             </ul>
           </aside>
@@ -37,6 +42,9 @@ class App extends Component {
             <Route path='/props' component={Props} />
             <Route path='/children' component={Children} />
             <Route path='/events' component={Events} />
+            <Route path='/form' component={Form} />
+            <Route path='/uncontrolledForm' component={UncontrolledForm} />
+            <Route path='/refs' component={Grandparent} />
             <Route path='/life-cycle-methods' component={LifeCycleMethods} />
           </div>
         </div>
