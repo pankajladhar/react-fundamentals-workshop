@@ -14,10 +14,8 @@ class ChildComponent extends Component {
 
 ChildComponent.propTypes = {
     title: PropTypes.string.isRequired,
-    subTitle: PropTypes.string
+    subTitle: PropTypes.number
 };
-
-
 
 
 class PropTypesComponent extends Component {

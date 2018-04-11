@@ -14,7 +14,7 @@ let FullName = (props) =>{
 let FruitList = (props) => {
   return (
     <ul>
-      {props.fruits.map(fruit => <li key={fruit}>{fruit}</li>)}
+      {props.fruits.map((fruit, index) => <li key={fruit}>{fruit}</li>)}
     </ul>
   )
 }

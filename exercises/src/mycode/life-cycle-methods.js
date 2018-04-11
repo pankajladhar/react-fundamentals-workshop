@@ -1,12 +1,46 @@
-import  React from 'react'
+import  React, { Component } from 'react'
 
-export function LifeCycleMethods() {
-  return (
-    <div>
-      <p>Fetch posts from <a href="https://jsonplaceholder.typicode.com/posts">here</a> and render it</p>
-      <hr />
-    </div>
-  )
+
+class LifeCycleMethods extends Component {
+  constructor(props) {
+    super(props);
+    console.log("[Inside constructor]")
+  }
+
+  componentWillMount() {
+    console.log("[Inside componentWillMount]")
+  }
+
+  componentDidMount() {
+    console.log("[Inside componentDidMount]")
+  }
+
+  componentWillReceiveProps(nextProps) {
+
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+
+  }
+
+  componentWillUnmount() {
+    console.log("[Inside componentWillUnmount]")
+  }
+
+  render() {
+    return (
+      <div>
+        Example of React Life cycle
+      </div>
+    );
+  }
 }
-
 export default LifeCycleMethods

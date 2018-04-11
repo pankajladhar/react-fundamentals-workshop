@@ -9,20 +9,22 @@ class Toggle extends Component {
     this.toggle = this.toggle.bind(this)
   }
   toggle() {
-    /*this.setState((prevState) => ({
+
+    this.setState((prevState) => ({
       flag: !prevState.flag
-    }))*/
+    }))
+
+    // this.setState({
+    //   flag: !this.state.flag
+    // });
+    
+    // console.log(this.state.flag)
 
     this.setState({
       flag: !this.state.flag
-    });
-    //console.log(this.state.flag)
-
-    /*this.setState({
-      flag: !this.state.flag
     }, () => {
       console.log(this.state.flag)
-    });*/
+    });
   }
   render() {
     return (
