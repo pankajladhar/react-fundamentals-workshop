@@ -12,6 +12,7 @@ import UncontrolledForm from './mycode/uncontrolledForm';
 import Grandparent from './mycode/refs';
 import PropTypesComponent from './mycode/propTypesComponent';
 import LifeCycleMethods from './mycode/life-cycle-methods'
+import ContextApi from './mycode/contextApi'
 
 
 
@@ -34,6 +35,7 @@ class App extends Component {
               <li><Link to='/refs'>Using refs</Link></li>
               <li><Link to='/propTypesComponent'>Importance of Proptypes</Link></li>
               <li><Link to='/life-cycle-methods'>LifeCycleMethods</Link></li>
+              <li><Link to='/context-api'>Context Api</Link></li>
             </ul>
           </aside>
           <div className="content">
@@ -49,6 +51,7 @@ class App extends Component {
             <Route path='/refs' component={Grandparent} />
             <Route path='/propTypesComponent' component={PropTypesComponent} />
             <Route path='/life-cycle-methods' component={LifeCycleMethods} />
+            <Route path='/context-api' component={ContextApi} />
           </div>
         </div>
       </Router>
